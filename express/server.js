@@ -6,8 +6,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<h1>Get Ricked Rolled!</h1>');
   res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
   res.end();
 });
