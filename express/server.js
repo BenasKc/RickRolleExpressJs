@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
   res.end();
 });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
-router.post('/', (req, res) => res.json({ postBody: req.body }));
+router.post('/', (req, res) => res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  res.end(););
 
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);
